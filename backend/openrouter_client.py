@@ -32,7 +32,7 @@ MODEL_OPTIONS = [
     {"id": "meta-llama/llama-4-maverick",        "name": "Llama 4 Maverick",               "speed": "medium"},
     {"id": "moonshotai/kimi-vl-a3b-thinking",    "name": "Kimi VL A3B (Thinking)",         "speed": "medium"},
     # ── Slow (but thorough) models ──
-    {"id": "qwen/qwen3-vl-30b-a3b-thinking",    "name": "Qwen3-VL 30B (Thinking)",        "speed": "slow"},
+    {"id": "qwen/qwen3-vl-30b-a3b-thinking",    "name": "Qwen3-VL 30B Thinking (Recommended)", "speed": "slow"},
     {"id": "qwen/qwen3-vl-235b-a22b-thinking",  "name": "Qwen3-VL 235B (Thinking)",       "speed": "slow"},
 ]
 

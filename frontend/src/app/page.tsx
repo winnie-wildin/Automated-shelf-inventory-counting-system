@@ -57,7 +57,7 @@ export default function Home() {
           { id: "google/gemini-2.5-flash-preview",   name: "Gemini 2.5 Flash Preview",   speed: "medium" },
           { id: "meta-llama/llama-4-maverick",       name: "Llama 4 Maverick",           speed: "medium" },
           { id: "moonshotai/kimi-vl-a3b-thinking",   name: "Kimi VL A3B (Thinking)",     speed: "medium" },
-          { id: "qwen/qwen3-vl-30b-a3b-thinking",   name: "Qwen3-VL 30B (Thinking)",    speed: "slow" },
+          { id: "qwen/qwen3-vl-30b-a3b-thinking",   name: "Qwen3-VL 30B Thinking (Recommended)", speed: "slow" },
           { id: "qwen/qwen3-vl-235b-a22b-thinking",  name: "Qwen3-VL 235B (Thinking)",  speed: "slow" },
         ]);
         setSelectedModel("qwen/qwen2.5-vl-72b-instruct");
@@ -141,6 +141,13 @@ export default function Home() {
       <Header />
 
       <main className="flex-1 max-w-6xl mx-auto w-full px-4 sm:px-6 py-8">
+        <div className="mb-5 flex items-start gap-2 rounded-lg bg-amber-50 border border-amber-200 px-4 py-2.5 text-xs text-amber-700">
+          <span className="shrink-0 mt-0.5">💡</span>
+          <span>
+            <strong>Tip:</strong> Crop your images to just the shelf area for better accuracy.
+            For best results, use <strong>Qwen3-VL 30B (Thinking)</strong> in Thorough mode.
+          </span>
+        </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Left column: Image upload + controls */}
           <section>
