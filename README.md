@@ -21,7 +21,14 @@ AI-powered system that counts products on retail shelves from photographs using 
 | AI Models | Qwen3-VL, Qwen2.5-VL, Gemini Flash, InternVL3, Kimi VL (via OpenRouter) |
 | Infrastructure | Docker Compose |
 
-## Quick Start
+## Live Demo
+
+- **Frontend**: [automated-shelf-inventory-counting.vercel.app](https://automated-shelf-inventory-counting.vercel.app)
+- **Backend API**: [automated-shelf-inventory-counting-system.onrender.com](https://automated-shelf-inventory-counting-system.onrender.com/health)
+
+> Note: Render free tier sleeps after 15 min of inactivity. First request may take ~30s to wake up.
+
+## Quick Start (Local)
 
 ### Prerequisites
 - Docker & Docker Compose
