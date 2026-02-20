@@ -48,8 +48,17 @@ export default function Home() {
       })
       .catch(() => {
         setModels([
-          { id: "qwen/qwen2.5-vl-72b-instruct", name: "Qwen2.5-VL 72B Instruct", speed: "medium" },
-          { id: "qwen/qwen2.5-vl-32b-instruct", name: "Qwen2.5-VL 32B Instruct", speed: "medium" },
+          { id: "google/gemini-2.0-flash-001",      name: "Gemini 2.0 Flash",           speed: "fast" },
+          { id: "qwen/qwen2.5-vl-3b-instruct",      name: "Qwen2.5-VL 3B Instruct",    speed: "fast" },
+          { id: "opengvlab/internvl3-2b",            name: "InternVL3 2B",               speed: "fast" },
+          { id: "qwen/qwen2.5-vl-32b-instruct",     name: "Qwen2.5-VL 32B Instruct",   speed: "medium" },
+          { id: "qwen/qwen2.5-vl-72b-instruct",     name: "Qwen2.5-VL 72B Instruct",   speed: "medium" },
+          { id: "opengvlab/internvl3-14b",           name: "InternVL3 14B",              speed: "medium" },
+          { id: "google/gemini-2.5-flash-preview",   name: "Gemini 2.5 Flash Preview",   speed: "medium" },
+          { id: "meta-llama/llama-4-maverick",       name: "Llama 4 Maverick",           speed: "medium" },
+          { id: "moonshotai/kimi-vl-a3b-thinking",   name: "Kimi VL A3B (Thinking)",     speed: "medium" },
+          { id: "qwen/qwen3-vl-30b-a3b-thinking",   name: "Qwen3-VL 30B (Thinking)",    speed: "slow" },
+          { id: "qwen/qwen3-vl-235b-a22b-thinking",  name: "Qwen3-VL 235B (Thinking)",  speed: "slow" },
         ]);
         setSelectedModel("qwen/qwen2.5-vl-72b-instruct");
       });
