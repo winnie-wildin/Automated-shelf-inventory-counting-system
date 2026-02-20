@@ -73,6 +73,10 @@ See [architecture.md](architecture.md) for detailed Mermaid diagrams covering sy
 └── docker-compose.yml
 ```
 
+## Thoughts
+
+If I were to build this for production, I'd probably try combining a fine tuned detection model like YOLOv8 with something like SAM for segmentation, because segmentation can really help separate products that are packed closely together on a shelf, which bounding boxes alone tend to mess up. I'd still keep a VLM around but maybe just use it for reading product names off the cropped segments instead of making it do all the counting. This approach would work really well if I knew the store layout, like the shelf dimensions and how products are typically stacked, because that kind of prior knowledge can really boost accuracy. But I also think fine tuned detection isn't really a general solution. If you want something that works across any random store or shelf without knowing anything about it beforehand, then honestly a VLM based approach like what I have now makes more sense because it can just look at a new shelf and figure things out on its own.
+
 ## Analysis Modes
 
 | Mode | Prompt | Default Model | Speed | Best For |
