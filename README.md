@@ -54,6 +54,10 @@ docker compose up --build -d
 
 4. Open [http://localhost:3000](http://localhost:3000)
 
+### Test Data
+
+The `data/` folder contains specially curated multi-angle pictures of shelves that you can use to test the system. Each shelf folder contains multiple images taken from different angles to demonstrate the multi-angle analysis feature.
+
 ## Architecture
 
 See [architecture.md](architecture.md) for detailed Mermaid diagrams covering system architecture, data flow, and project structure.
